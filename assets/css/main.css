@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.shorthand-background {
+  width: 100%;
+  height: 200px;
+  max-width: 300px;
+  overflow: hidden;
+}
+.shorthand-background__image {
+  background: #000 no-repeat fixed center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.shorthand-border {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+}
+.shorthand-border__box {
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+  border-width: 10px 20px 30px 40px;
+  border-radius: 40px 30px 20px 10px;
+}
+
+.shorthand-font__title {
+  font: italic bold 30px/1.2 helvetica;
+}
+
+.shorthand-transition__block {
+  width: 100%;
+  height: 500px;
+  background-color: red;
+  border: 2px solid blue;
+  transition: 0.3s background-color, border ease 0.5s;
+}
+.shorthand-transition__block:hover {
+  background-color: blue;
+  border: 2px solid red;
+}
+
+.shorthand-flex__block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.shorthand-flex__item {
+  font-size: 3em;
+  width: 20%;
+  height: 200px;
+  background-color: blue;
+  flex: 1 1 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shorthand-flex__item:nth-child(odd) {
+  background-color: green;
+}
+.shorthand-flex__item h3 {
+  font: 3em/1.2 helvetica italic bolder;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  font: 2rem/1.2 italic bolder helvetica;
+  margin: 60px 0 40px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

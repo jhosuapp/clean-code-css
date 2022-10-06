@@ -1,0 +1,72 @@
+.shorthand-background{
+    width: 100%;
+    height: 200px;
+    max-width: 300px;
+    overflow: hidden;
+    &__image{
+        background: #000 no-repeat fixed center; // esta propiedad es la abreviación de background-repeat, background-attachment, background-position & background-color;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.shorthand-border{
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    &__box{
+        width: 100%;
+        height: 100%;
+        border: 2px solid red; //Esta propiedad es la abreviación de border-width, border-style & border-color
+        border-width: 10px 20px 30px 40px; //esta propiedad es la abreviación de border border-left-width, border-right-width ..etc
+        border-radius: 40px 30px 20px 10px; //esta propiedad es la abreviación de border border-left-width, border-right-width ..etc
+    }
+}
+
+.shorthand-font{
+    &__title{
+        font: italic bold 30px/1.2 helvetica; //Esta propiedad es la abreviación de font-family, font-style, font-weight & line-height;
+    }
+}
+
+.shorthand-transition{
+    &__block{
+        width: 100%;
+        height: 500px;
+        background-color: red;
+        border: 2px solid blue;
+        transition: .3s (background-color, border) ease .5s; //Esta propiedad es la abreviación de transition-duration, transition-property, transition-timing-function & transition-delay
+        &:hover{
+            background-color: blue;
+            border: 2px solid red;
+        }
+    }
+}
+
+.shorthand-flex{
+    &__block{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__item{
+        font-size: 3em;
+        width: 20%;
+        height: 200px;
+        background-color: blue;
+        flex: 1 1 400px; // Esta propiedad es la abreviación de flex-grow, flex-shirk & flex-basis
+        &:nth-child(odd){
+            background-color: green;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3{
+            font: 3em/1.2 helvetica italic bolder; 
+        }
+    }
+}
